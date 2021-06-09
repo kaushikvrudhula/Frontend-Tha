@@ -6,7 +6,7 @@ html,body {
   }
   
   body {
-    background: #ff4814;
+    background: #ff5100;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +20,7 @@ html,body {
   position: relative;
   cursor: pointer;
   animation: floating 2s infinite ease-in-out;
+    transform:translateY(-130%);
 }
 
 @keyframes floating{
@@ -53,12 +54,6 @@ html,body {
   border-radius: 50%;
   transition: .3s linear;
 }
-
-.ghost:hover .eyes span
-{
-  height: 16px;
-}
-
 .mouth
 {
   width: 40px;
@@ -69,11 +64,6 @@ html,body {
   transition: .3s linear;
 }
 
-.ghost:hover .mouth
-{
-  height: 12px;
-  background: red;
-}
 
 .hands
 {
@@ -136,6 +126,7 @@ html,body {
     transform: translate(-50%,-50%);
     border-bottom: 10px solid saddlebrown;
     overflow: hidden;
+    
   }
   
   .clock {
