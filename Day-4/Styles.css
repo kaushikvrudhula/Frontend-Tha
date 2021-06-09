@@ -1,0 +1,228 @@
+html,body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    background: #ff4814;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ghost
+{ 
+  width: 140px;
+  height: 160px;
+  background-color: #f2f2f2;
+  border-radius: 70px 70px 0 0;
+  position: relative;
+  cursor: pointer;
+  animation: floating 2s infinite ease-in-out;
+}
+
+@keyframes floating{
+  50%{
+    transform: translateY(-30px);
+  }
+}
+
+.face
+{
+  width: 100px;
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 50px);
+}
+
+.eyes
+{
+  height: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.eyes span
+{
+  width: 24px;
+  height: 24px;
+  background-color: #2c3a47;
+  border-radius: 50%;
+  transition: .3s linear;
+}
+
+.ghost:hover .eyes span
+{
+  height: 16px;
+}
+
+.mouth
+{
+  width: 40px;
+  height: 20px;
+  background-color: #2c3a47;
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+  transition: .3s linear;
+}
+
+.ghost:hover .mouth
+{
+  height: 12px;
+  background: red;
+}
+
+.hands
+{
+  width: 180px;
+  position: absolute;
+  left: -20px;
+  top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hands span
+{
+  width: 20px;
+  height: 30px;
+  background-color: #f2f2f2;
+}
+
+.hands span:first-child
+{
+  border-radius: 20px 0 0 20px;
+}
+
+.hands span:last-child
+{
+  border-radius: 0 20px 20px 0;
+}
+
+.feet
+{
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  display: flex;
+}
+
+.feet span
+{
+  flex: 1;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 0 0 20px 20px;
+}
+
+.feet span:first-child
+{
+  border-radius: 0 0 20px 12px;
+}
+
+.feet span:last-child
+{
+  border-radius: 0 0 12px 20px;
+}
+  .scene {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-bottom: 10px solid saddlebrown;
+    overflow: hidden;
+  }
+  
+  .clock {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 20px solid darkorange;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    left: 0;
+  }
+  
+  .clock::before{
+    content: "";
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    border: 10px solid orange;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .clock::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: darkorange;
+    position: absolute;
+    top: 205px;
+    left: 205px;
+  }
+  
+  .hand::before {
+    content: "";
+    width: 30px;
+    height: 100px;
+    border-radius: 15px;
+    position: absolute;
+    top: 230px;
+    left: 215px;
+    background-color: rgb(204, 46, 236);
+    transform-origin: top;
+    border: 5px solid rgb(122, 4, 97);
+    box-sizing: border-box;
+    animation: rotate 216000s linear infinite;
+  }
+  
+  .hand::after {
+    content: "";
+    width: 30px;
+    height: 180px;
+    border-radius: 15px;
+    position: absolute;
+    top: 230px;
+    left: 215px;
+    background-color: orange;
+    transform-origin: top;
+    border: 5px solid darkorange;
+    box-sizing: border-box;
+    animation: rotate 3600s linear infinite;
+  }
+  .minutes {
+      background: rgb(157, 255, 0);
+      height: 40%;
+      left:49%;
+      position: absolute;
+      top:10%;
+      transform-origin: 50% 100%;
+      width: 2%;
+      border-radius: 15px;
+      animation: rotate 60s linear infinite;
+  }
+  
+  @keyframes tide {
+    to {transform: rotateZ(360deg);}
+  }
+  @keyframes rotate{
+      100%{
+          transform: rotateZ(360deg);
+      }
+  }
+
+
+  
+ 
+  
+  
