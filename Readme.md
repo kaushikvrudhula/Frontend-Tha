@@ -20,8 +20,8 @@ This Repo contains Daily assignments given by devsnest under the topic of front 
 
 ###### Day3 🥇 :- [Resume](https://github.com/kaushikvrudhula/Frontend-Tha/tree/master/Day-3)
 
-###### Day4 🥇 :- [Calculator](https://github.com/kaushikvrudhula/Frontend-Tha/tree/master/Day-4)
+###### Day4 🥇 :- [Clock](https://github.com/kaushikvrudhula/Frontend-Tha/tree/master/Day-4)
 
-###### Day5 🥇 :- [Clock](https://github.com/kaushikvrudhula/Frontend-Tha/tree/master/Day-5)
+###### Day5 🥇 :- [Calculator](https://github.com/kaushikvrudhula/Frontend-Tha/tree/master/Day-5)
 
 ###### Day6 🥇 :- [Basic Js](https://github.com/kaushikvrudhula/Frontend-Tha/tree/master/Day-6)
