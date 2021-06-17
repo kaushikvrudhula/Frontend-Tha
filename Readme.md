@@ -12,6 +12,8 @@
 
 This Repo contains Daily assignments given by devsnest under the topic of front end development.
 
+###### Take a deep dive to landing page if you are bored from scrolling !! :-
+
 #### Days 🥥 :-
 
 ###### Day1 🥇 :- [Buisness letter](https://github.com/kaushikvrudhula/Frontend-Tha/tree/master/Day-1)
