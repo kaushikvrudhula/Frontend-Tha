@@ -27,3 +27,5 @@ This Repo contains Daily assignments given by devsnest under the topic of front 
 ###### Day5 🥇 :- [Calculator](https://github.com/kaushikvrudhula/Frontend-Tha/tree/master/Day-5)
 
 ###### Day6 🥇 :- [Basic Js](https://github.com/kaushikvrudhula/Frontend-Tha/tree/master/Day-6)
+
+
