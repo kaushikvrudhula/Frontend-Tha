@@ -7,5 +7,5 @@ function Cylinder(cyl_height, cyl_diameter) {
     var radius = this.cyl_diameter / 2;
     return this.cyl_height * Math.PI * radius * radius;
   };
-  var cyl = new Cylinder(7, 4);
+  var cyl = new Cylinder(20, 4);
   console.log('volume =', cyl.Volume().toFixed(4));
