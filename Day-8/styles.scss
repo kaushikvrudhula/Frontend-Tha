@@ -1,0 +1,50 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+*body{
+  background-color: black;
+}
+.frame {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+}
+.grid-container{
+	display:grid;
+	grid-gap:1px;
+	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: repeat(20, 1fr);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.box{
+	margin:0;
+	width:19px;
+	height:19px;
+}
+
+.clicked{
+  background: rgb(12, 0, 116);
+  border: 1px solid rgb(14, 240, 228);
+  width: 19px;
+  height: 19px;
+}
+
+.clicked:hover{
+  background-color: rgb(147, 19, 179);
+}
