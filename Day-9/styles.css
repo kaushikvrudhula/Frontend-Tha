@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  font-family: 'Open Sans';
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  min-height: 100vh;
+  color: beige;
+}
+
+.stats {
+  padding: 20px;
+  width: 100%;
+}
+
+#sleft {
+  left: 0;
+}
+
+#sbook {
+  right: 0;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.grid-container {
+  margin: 0 auto;
+  width: 70vh;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 12px;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box {
+  background-color: #ec1c26;
+  margin: 0;
+  width: 10vh;
+  height: 10vh;
+}
+
+.box:hover {
+  opacity: 0.8;
+}
+
+.booked {
+  background-color: aqua;
+}
+/*# sourceMappingURL=styles.css.map */
