@@ -1,4 +1,4 @@
-var student = { name : "David Rayy", sclass : "VI", rollno : 12 }; 
+var student = { name: "David Rayy", sclass: "VI", rollno: 12 };
 
-delete(student.rollno);
+delete student.rollno;
 console.log(student);

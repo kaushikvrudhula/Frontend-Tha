@@ -1,40 +1,110 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 * {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: black;
+  background-color: #a102af;
   min-height: 100vh;
   color: beige;
 }
-main{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    }
-    
-    .grid-card{
-      margin:0 auto;
-      width:70vh;
-      height:auto;
-        display:grid;
-        grid-gap:12px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-      
-    }
-  .box{
-    background-color:#70108d;
-	margin:0;
-	width:15vh;
-	height:15vh;
-  border-radius: 25%;
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-  
+.grid-card {
+  margin: 0 auto;
+  width: 70vh;
+  height: auto;
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.box {
+  background-color: #70108d;
+  margin: 0;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 25%;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.rear {
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  backface-visibility: hidden;
+  width: 15vh;
+  height: 15vh;
+}
+.rear {
+  transform: rotateY(180deg);
+  background: #1793d1;
+  border: 3px solid black;
+}
+.box.spin {
+  transform: rotateY(180deg);
+}
+.box.spin.disabled {
+  visibility: hidden;
+}
+#result,
+#score {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  width: 120px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+}
+h1 {
+  text-align: center;
+  font-family: "Viaoda Libre", cursive;
+  color: white;
+  font-size: 4.5rem;
+  margin: 1rem 0;
+}
+p {
+  pointer-events: none;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.grid-card.game-over {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.end-btn {
+  display: block;
+  padding: 1.25rem 2rem;
+  font-size: 1.5rem;
+  background-color: yellow;
+  border: none;
+  border-radius: 10px;
+}
+.end-btn:hover {
+  opacity: 0.8;
+  transition: 250ms ease-in;
+}
