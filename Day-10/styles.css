@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #a102af;
+  background-color: #6b0455;
   min-height: 100vh;
   color: beige;
 }
@@ -18,7 +18,9 @@ main {
   flex-direction: column;
   justify-content: space-around;
 }
-
+#result {
+  text-align: center;
+}
 .grid-card {
   margin: 0 auto;
   width: 70vh;
@@ -29,13 +31,14 @@ main {
   grid-template-rows: repeat(4, 1fr);
 }
 .box {
-  background-color: #70108d;
+  background-color: #271188;
   margin: 0;
   width: 15vh;
   height: 15vh;
   border-radius: 25%;
   transition: 0.8s;
   transform-style: preserve-3d;
+  font-size: 1.5rem;
 }
 
 .front,
@@ -48,19 +51,25 @@ main {
   justify-content: center;
   flex-direction: column;
   backface-visibility: hidden;
+  margin: 0;
   width: 15vh;
   height: 15vh;
+  border-radius: 25%;
+  transition: 0.8s;
+  transform-style: preserve-3d;
 }
 .rear {
   transform: rotateY(180deg);
   background: #1793d1;
   border: 3px solid black;
+  border-radius: 25%;
 }
 .box.spin {
   transform: rotateY(180deg);
 }
 .box.spin.disabled {
-  visibility: hidden;
+  transform: rotateY(180deg);
+  transition: 0.4s;
 }
 #result,
 #score {
