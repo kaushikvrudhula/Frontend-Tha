@@ -148,3 +148,6 @@ main {
 .ans.wrong {
   background-color: rgba(255, 0, 0, 0.4);
 }
+.ans.correct {
+  background-color: rgba(0, 255, 0, 0.4);
+}
