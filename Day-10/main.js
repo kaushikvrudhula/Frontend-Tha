@@ -17,12 +17,12 @@ let emojiArray = [
   "🤡",
   "🥶",
   "🥭",
-  "🍎",
   "🍟",
   "🥭",
+  "🍟",
 ];
 shuffle(emojiArray);
-for (i = 1; i <= 16; i++) {
+for (i = 0; i < 16; i++) {
   let div = document.createElement("div");
   let front = document.createElement("div");
   let rear = document.createElement("div");

@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  font-family: "Open Sans";
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #550155;
+  min-height: 100vh;
+  color: beige;
+}
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.progress {
+  position: absolute;
+  background-color: #0c3866;
+  width: 100%;
+  height: 15vh;
+  top: 0;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+.wrapper > div {
+  margin: 10px;
+  background-color: #05b87c;
+  font-size: 40px;
+}
+.ques {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin-left: 5%;
+}
+.options {
+  position: absolute;
+  display: grid;
+  grid-column: repeat(1, 1fr);
+  grid-row: repeat(4, 1fr);
+  width: 50vw;
+  margin-left: 20px;
+  gap: 20px;
+}
+.options > div {
+  margin: 6px;
+}
+#progressbar {
+  margin-top: 1%;
+  margin-left: 24%;
+  width: 50%;
+  background-color: black;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar > div {
+  background-color: orange;
+  width: 40%;
+  /* Adjust with JavaScript */
+  height: 30%;
+  border-radius: 10px;
+}
+#heading {
+  position: absolute;
+  padding-top: 10%;
+  margin-left: 30%;
+}
+.left-pane {
+  flex: 1;
+  border: 2px solid rgb(12, 12, 12);
+  height: 60vh;
+  border-radius: 15px;
+}
+.content {
+  position: relative;
+  flex: 2;
+  border: 2px solid rgb(12, 12, 12);
+  height: 60vh;
+  border-radius: 15px;
+}
+
+.next-btn {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+}
+.start-btn {
+  position: absolute;
+  top: 70%;
+  left: 22%;
+}
+.item {
+  gap: 20%;
+}
+.question {
+  padding-left: 27%;
+}
+
+.sc {
+  padding-top: 2%;
+  padding-left: 35%;
+}
+#current {
+  padding-bottom: 20%;
+  padding-left: 40%;
+}
+#score {
+  padding-top: 10%;
+  padding-left: 47%;
+}
+
+#next:hover {
+  transform: scale(0.98);
+  transition: 0.2;
+}
+
+.hide {
+  display: none;
+}
+
+#start:active {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+.ans {
+  background: transparent;
+  font-size: 20px;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  font-weight: bold;
+}
+.ans.wrong {
+  background-color: rgba(255, 0, 0, 0.4);
+}
