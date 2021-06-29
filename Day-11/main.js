@@ -57,7 +57,6 @@ function showQuestion(question) {
     button.onclick = null;
     button.innerText = answer;
     button.classList.add("ans");
-    button.classList.onclick();
     if (question.answer === answer) {
       button.dataset.correct = true;
     }
@@ -65,10 +64,7 @@ function showQuestion(question) {
     options.appendChild(button);
   });
 }
-var element = document.getElementById("elem");
-element.onclick = function (event) {
-  console.log(event);
-};
+
 function selectAns(e) {
   const selected = e.target;
   const correct = selected.dataset.correct;
