@@ -29,3 +29,12 @@ btn.addEventListener("click", () => {
 });
 
 localStorage.setItem("todo", todos);
+
+function loadData() {
+  if(!localStorage.getItem("tasks")) return;
+  tasks = JSON.parse(localStorage.getItem("tasks"));
+  total.innerHTML = tasks.length;
+  tasks.forEach(todo,i) => {
+    loadTodo(todo,i);
+  });
+}
