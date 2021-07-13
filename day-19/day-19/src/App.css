@@ -1,0 +1,34 @@
+* {
+  font-family: "Open Sans";
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.title {
+  position: relative;
+  top: 0;
+  text-align: center;
+  font-size: 50px;
+}
+main {
+  position: relative;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  top: 100px;
+  left: 30%;
+  width: 600px;
+}
+.Flipdown {
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  font-size: 100px;
+  border-radius: 5px;
+}
+.Flipdown:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
