@@ -5,7 +5,28 @@ import Card from "./components/card";
 function App() {
   return (
     <div class="wrap">
-      <Card img="/img/lvl-1.jpg" title="wallpaper-1" />
+      <div className="card-container">
+        <Card
+          src="/img/lvl-1.jpg"
+          title="Brownie"
+          p="you have consumed 56 cals today"
+        />
+        <Card
+          src="/img/lvl-2.jpg"
+          title="Pizza"
+          p="you have consumed 69 cals today"
+        />
+        <Card
+          src="/img/lvl-3.jpg"
+          title="Burger"
+          p="you have consumed 560 cals today"
+        />
+        <Card
+          src="/img/lvl-4.jpg"
+          title="Coke"
+          p="you have consumed 650 cals today"
+        />
+      </div>
     </div>
   );
 }
