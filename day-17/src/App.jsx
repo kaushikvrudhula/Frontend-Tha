@@ -2,6 +2,7 @@ import "./style.css";
 import React from "react";
 
 import Card from "./components/card";
+
 function App() {
   return (
     <div class="wrap">
@@ -9,11 +10,13 @@ function App() {
         <Card
           src="/img/lvl-1.jpg"
           title="Brownie"
+          alt="Wallpaper-1"
           p="you have consumed 56 cals today"
         />
         <Card
           src="/img/lvl-2.jpg"
           title="Pizza"
+          alt="Wallpaper-2"
           p="you have consumed 69 cals today"
         />
         <Card

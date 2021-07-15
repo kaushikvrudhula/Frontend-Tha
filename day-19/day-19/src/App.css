@@ -16,6 +16,7 @@ main {
   position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   top: 100px;
   left: 30%;
   width: 600px;
