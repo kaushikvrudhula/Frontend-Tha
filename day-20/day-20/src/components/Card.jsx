@@ -9,7 +9,7 @@ const Card = ({ food, foods, setFoods, index }) => {
             setFoods(newFoods);
           }}
         >
-          <img src="/images/lvl-4.png" alt="" width="50px" height="50px" />
+          <img src="/images/close.png" alt="" width="100px" height="120px" />
         </div>
         <div className="img-container">
           <img src={food.url} alt="" />
