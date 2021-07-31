@@ -3,7 +3,7 @@ const initState = { name: "", email: "" };
 const userReducer = (state = initState, action) => {
   switch (action.type) {
     case "CHANGE_USERNAME":
-      //console.log("Chaning User name");
+      //console.log("Changing User name");
       return { ...state, name: action.name };
 
     case "CHANGE_EMAIL":
