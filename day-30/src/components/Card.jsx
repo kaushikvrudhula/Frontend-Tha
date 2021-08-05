@@ -1,21 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {Card, ListGroup} from "react-bootstrap";
+const ProductCard = ({title,image,desc,price}) => {
+    return (
+        <Card>
+            <Card.Img variant="top" />
+            <Card.Title>{title}</Card.Title>
+            <Card.Text>{desc}</Card.Text>
+            <ListGroup variant="flush">
+            <ListGroup.Item>Rs.{price}</ListGroup.Item>
+            </ListGroup>
+        </Card>
+    );
+};
 
-const Card = ({
-    isLoading,
-    id,
-    title,
-    description,
-    image,
-    price,
-    isIndWishlist,
-    selectProduct,
-}) => {
-    console.log(title);
-    if (isLoading)
-        return(
-            <Card style={{width: '18rem'}}>
-                <Card.Title>Loading....</Card.Title>
-            </Card>
-        )
-}
+export default ProductCard;
