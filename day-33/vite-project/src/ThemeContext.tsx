@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-interface ThemeContextType {
+export interface ThemeContextType {
     theme:boolean
     setTheme:(theme:boolean) => void
 }

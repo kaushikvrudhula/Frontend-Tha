@@ -1,19 +1,19 @@
 import React, {useState,useEffect,useContext} from 'react'
 import './App.css'
 import ThemeContext from './ThemeContext'
+import ThemeToggle from './ThemeToggle'
+import Todos from './Todos'
+
 
 const App = () => {
-  const [counter, setCounter] = useState<number | null>(null);
+  
   const [theme,setTheme] = useState<boolean>(false)
-  useEffect(() => {
-  setCounter(1)
-  }, [])
+  
   return (
-    <ThemeContext.Provider value={}>
+    <ThemeContext.Provider value={{theme,setTheme}}>
     <div className="App">
-      <button onClick={() => {
-        setCounter(counter + 1)
-      }}>{counter}</button>
+      <Todos/>
+      <ThemeToggle />
     </div>
     </ThemeContext.Provider>
   );
