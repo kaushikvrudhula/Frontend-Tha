@@ -9,7 +9,8 @@ class Counter extends Component {
     return (
       <div
         className="Flipdown"
-        onClick={() => this.setState({ count: this.state.count + 1 })}
+         onClick={() => this.setState({ count: this.state.count + 1 })}
+        
       >
         {this.state.count}
       </div>

@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import {Nav ,Container} from "react-bootstrap";
-const Navbar = () => {
-    <Navbar bg="dark" expand="lg">
+import {Navbar,Nav ,Container} from "react-bootstrap";
+const Navb = () => {
+    return(
+    <>
+     <Navbar bg="light" variant="light">
     <Container>
     <Navbar.Brand href="#home">Navbar</Navbar.Brand>
     <Nav className="me-auto">
@@ -10,6 +12,8 @@ const Navbar = () => {
       <Nav.Link href="#pricing">Pricing</Nav.Link>
     </Nav>
     </Container>
-    </Navbar>
-}
-export default Navbar;
+  </Navbar>
+</>
+    );
+};
+export default Navb;

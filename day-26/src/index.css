@@ -11,4 +11,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(250, 246, 228);
+}
+
+.details-wrapper{
+  top:2rem;
+  position:relative;
+  box-shadow: 13px 15px 10px -1px rgba(63, 66, 54, 1);;
+  border-radius: 10px;
+  left:20rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(232, 245, 115);
+  width:fit-content;
+}
+.input-text{
+  padding:1rem;
+}
+.input-wrapper{
+ 
+  background-color: rgb(29, 22, 22);
+  width:fit-content;
+  display:flex;
+  height:auto;
+  left:25rem;
+  flex-direction: column;
+}
+
+
+.mail1{
+ position: absolute;
+ padding:10%;
+ padding-left: 0;
+}
+.steps{
+  padding-left: 15rem;
+}
+.field{
+  position: relative;
+  top:1rem;
+padding-left: 45%;
 }

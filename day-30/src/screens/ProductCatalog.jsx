@@ -1,15 +1,17 @@
-import Card from "../components/Card";
+import Card from "../components/ProductCard";
 import { FetchProducts } from "../services/FetchData";
 import { useState, useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 
 const ProductCatalog = () => {
   const [products, setProducts] = useState(null);
-  useEffect(() => {
+/*  useEffect(() => {
     FetchProducts().then((data) => {
       setProducts(data);
     });
+    
   }, []);
+*/
   console.log(products);
   return (
     <div className="product-grid">

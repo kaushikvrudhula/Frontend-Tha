@@ -1,12 +1,12 @@
-import "./App.css";
-import ListTodo from "./components/ListTodo";
-import AddTodo from "./components/AddTodo";
+import './App.css';
+import DisplayTodo from './components/DisplayTodo';
+import GetTodo from './components/GetTodo';
+
 function App() {
   return (
     <div className="App">
-      <h1> Todo List</h1>
-      <AddTodo />
-      <ListTodo />
+      <GetTodo/>
+      <DisplayTodo/>
     </div>
   );
 }

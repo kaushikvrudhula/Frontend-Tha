@@ -3,7 +3,6 @@ var Bleach = {
   lastname: "Kurosaki",
   getFullname: function () {
     var full_name = this.firstname + " " + this.lastname;
-
     return full_name;
   },
 };
