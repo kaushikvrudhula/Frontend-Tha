@@ -8,7 +8,8 @@ interface deleteNoteAction {
     payload:number;
 }
 type ActionType =  deleteNoteAction | addNoteAction;
-const notesReducer = (state :any,action:ActionType) =>
+
+const notesReducer = (state :any =[],action:ActionType) =>
 {
  switch(action.type) {
      case 'ADD_NOTE':
